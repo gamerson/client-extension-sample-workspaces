@@ -1,0 +1,8 @@
+bravo-global-css:
+    name: Bravo Global CSS
+    type: globalCSS
+    url: global.css
+
+runtime:
+  template: global-css
+  type: static

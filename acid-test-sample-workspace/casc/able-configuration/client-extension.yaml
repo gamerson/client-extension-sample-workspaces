@@ -1,0 +1,17 @@
+able-configuration:
+  name: Able Configuration
+  scopes:
+    - Liferay.Headless.Batch.Engine.everything
+    - Liferay.Object.Admin.REST.everything
+  type: oauthApplicationHeadlessServer
+  userAccountEmailAddress: test@$[conf:dxp.lxc.liferay.com.virtualInstanceId]
+
+runtime:
+  template: configuration
+  type: configuration
+  workload: job
+  env:
+  - name: OAUTH2_JOB_PROFILE
+    value: able-configuration
+  - name: CURL_FLAGS
+    value: ""

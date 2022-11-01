@@ -1,0 +1,8 @@
+charlie-global-js:
+    name: Charlie Global JS
+    type: globalJS
+    url: global.js
+
+runtime:
+  template: global-js
+  type: static

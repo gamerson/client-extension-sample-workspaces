@@ -1,0 +1,8 @@
+juliet-theme-favicon:
+    name: ${name}
+    type: themeFavicon
+    url: favicon.ico
+
+runtime:
+  template: theme-favicon
+  type: static
