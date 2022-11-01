@@ -1,0 +1,15 @@
+runtime:
+  type: service
+  template: service-springboot
+  cpu: 500m
+  memory: 256Mi
+
+coupon-updated-user-agent:
+  type: oauthApplicationUserAgent
+  scopes:
+    - C_Coupon.everything
+
+coupon-updated-object-action:
+  type: objectAction
+  resourcePath: /coupon/updated
+  oAuth2ApplicationExternalReferenceCode: coupon-updated-user-agent
